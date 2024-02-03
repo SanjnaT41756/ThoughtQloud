@@ -1,6 +1,7 @@
 // BackgroundPage.js
 import React from 'react';
 import CloudButton from './Cloud';
+import './CloudBackground.css'
 
 const CloudBackground = ({ numberOfClouds }) => {
   const handleCloudClick = () => {
@@ -18,9 +19,10 @@ const CloudBackground = ({ numberOfClouds }) => {
   };
 
   return (
-    <div>
-      <h1>Background Page</h1>
-      {renderClouds()}
+    <div className="background-page">
+      <div className="cloud-container">
+        {renderClouds()} 
+      </div>
     </div>
   );
 };

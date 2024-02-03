@@ -8,6 +8,9 @@
     border-radius: 100px;
     position: relative;
     border-width: 0px;
+    margin-top: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
     transition: box-shadow 0.3s ease, cursor 0.3s ease;
   }
   
