@@ -1,0 +1,18 @@
+/* BackgroundPage.css */
+
+.background-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .cloud-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow clouds to wrap to the next line */
+    max-width: 100%;
+  }
+  

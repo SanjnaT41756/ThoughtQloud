@@ -1,25 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import React from 'react';
+import CloudBackground from './CloudBackground';
+const App = () => {
+  const numberOfClouds = 3; // Specify the number of clouds you want
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CloudBackground numberOfClouds={numberOfClouds} />
     </div>
   );
-}
+};
 
 export default App;
