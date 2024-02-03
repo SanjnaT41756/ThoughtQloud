@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import React from 'react';
+import CloudButton from './Cloud'; // Adjust the path based on your project structure
+
+const App = () => {
+  const handleCloudClick = () => {
+    // Your custom logic when the cloud button is clicked
+    console.log('Cloud clicked!');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Your App</h1>
+      <CloudButton label="Click me" color="#F08080" />
     </div>
   );
-}
+};
 
 export default App;

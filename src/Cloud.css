@@ -1,0 +1,51 @@
+  /* CloudComponent.css */
+
+  .cloud {
+    width: 350px;
+    height: 120px;
+    background: #ECEFF1;
+    /* box-shadow: 10px 10px rgba(0, 0, 0, 0.2); */
+    border-radius: 100px;
+    position: relative;
+    border-width: 0px;
+    transition: box-shadow 0.3s ease, cursor 0.3s ease;
+  }
+  
+  .cloud:hover {
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2); /* Adjust the offset values */
+    cursor: pointer;
+  }
+
+  .cloud::after,
+  .cloud::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+  }
+  
+  .cloud::after {
+    width: 100px;
+    height: 100px;
+    top: -130px;
+    left: -160px;
+  }
+  
+  .cloud::before {
+    width: 180px;
+    height: 180px;
+    top: -70px;
+    left: 90px;
+  }
+  
+  .cloud-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000; /* Adjust the text color as needed */
+  }
+  
+   
+ 
