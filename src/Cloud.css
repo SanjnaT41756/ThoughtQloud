@@ -48,6 +48,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000000; /* Adjust the text color as needed */
+    z-index: 1;
   }
   
    
