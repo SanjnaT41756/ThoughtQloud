@@ -3,7 +3,6 @@ import React from "react";
 import CloudButton from "./Cloud";
 import { Link } from "react-router-dom";
 import "./CloudBackground.css";
-import { useNavigate } from "react-router-dom";
 
 const CloudBackground = ({ numberOfClouds, type }) => {
     let bubbleTitles = new Array();
@@ -76,13 +75,14 @@ const CloudBackground = ({ numberOfClouds, type }) => {
             "Queer is an umbrella term that includes a variety of sexual orientations and gender identities beyond the traditional categories of straight and cisgender.";
         bubbleTitles.push("learn more");
     }
-};
 
-const renderClouds = () => {
-    const clouds = [];
-    for (let i = 0; i < numberOfClouds; i++) {
-        clouds.push(<CloudButton label={bubbleTitles[i]} />);
-    }
+    const renderClouds = () => {
+        const clouds = [];
+        for (let i = 0; i < numberOfClouds; i++) {
+            clouds.push(<CloudButton label={bubbleTitles[i]} />);
+        }
+        return clouds;
+    };
 
     return (
         <div className="background-page">

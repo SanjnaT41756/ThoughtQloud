@@ -1,11 +1,27 @@
 [
     {
-        "title": "Page 1",
+        "title": "Page 0",
         "imageUrl": "./images/mother_hugging.jpg",
+        "text": "This is some text for Page 0."
+    },
+    {
+        "title": "Page 1",
         "text": "This is some text for Page 1."
     },
     {
         "title": "Page 2",
         "text": "This is some text for Page 2."
+    },
+    {
+        "title": "Page 3",
+        "text": "This is some text for Page 3."
+    },
+    {
+        "title": "Page 4",
+        "text": "This is some text for Page 4."
+    },
+    {
+        "title": "Page 5",
+        "text": "This is some text for Page 5."
     }
 ]

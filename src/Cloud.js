@@ -20,6 +20,22 @@ const CloudButton = ({ label }) => {
             navigate("/faces");
         } else if (label == "Ashamed") {
             navigate("/ashamed");
+        } else if (label == "How could I not have known") {
+            navigate("/info", { state: { infoPageIndex: 1 } });
+        } else if (label == "I feel as if I don't know them anymore") {
+            navigate("/info", { state: { infoPageIndex: 2 } });
+        } else if (label == "I feel like they lied to me") {
+            navigate("/info", { state: { infoPageIndex: 3 } });
+        } else if (
+            label ==
+            "Everything that I thought for my child will no longer happen."
+        ) {
+            navigate("/info", { state: { infoPageIndex: 4 } });
+        } else if (
+            label ==
+            "I don't want them to go through the hardships of being queer."
+        ) {
+            navigate("/info", { state: { infoPageIndex: 5 } });
         } else if (
             label == "I failed as a parent" ||
             label == "What will other people think?" ||
@@ -27,20 +43,14 @@ const CloudButton = ({ label }) => {
             label == "It is against all my beliefs" ||
             label == "This is unnatural" ||
             label == "This challenges everything I once thought I knew" ||
-            label == "How could I not have known" ||
-            label == "I feel as if I don't know them anymore" ||
             label == "I feel like they lied to me" ||
-            label ==
-                "Everything that I thought for my child will no longer happen." ||
             label == "Do you know what being queer is?" ||
             label == "How did i not see the signs" ||
             label == "They dont seem gay to me" ||
             label == "ok" ||
-            label == "learn more" ||
-            label ==
-                "I don't want them to go through the hardships of being queer."
+            label == "learn more"
         ) {
-            navigate("/dummy");
+            navigate("/info", { state: { infoPageIndex: 0 } });
         } else if (label == "Religion") {
             navigate("/religion");
         } else if (label == "Deceit") {

@@ -54,7 +54,7 @@ const App = () => {
                     path="/dissapointment"
                     element={
                         <CloudBackground
-                            numberOfClouds={3}
+                            numberOfClouds={2}
                             type={"dissapointment"}
                         />
                     }
