@@ -9,6 +9,7 @@ const Resources = () => {
         alignItems: "center",
         marginTop: "10vh",
         fontSize: "50px", // Adjust spacing between the title and emojis
+        color: "#ffffff",
     };
 
     const centerContainerStyle = {
@@ -18,6 +19,7 @@ const Resources = () => {
         height: "100vh",
         flexDirection: "column",
         textAlign: "center",
+        backgroundColor: "#87ceeb",
     };
 
     const imageStyle = {
@@ -50,7 +52,26 @@ const Resources = () => {
 
     return (
         <div style={centerContainerStyle}>
-            <h1>Resources Page</h1>
+            <h1 style={titleStyle}>Resources</h1>
+
+            <a
+                style={paragraphStyle}
+                href="https://pflag.org/resource/parents-comingout/"
+            >
+                PFLAG Coming Out Help for Families, Friends, and Allies
+            </a>
+            <a style={paragraphStyle} href="http://familyproject.sfsu.edu/">
+                Family Acceptance Project
+            </a>
+            <a style={paragraphStyle} href="http://www.familyequality.org/">
+                Family Equality Council
+            </a>
+            <a
+                style={paragraphStyle}
+                href="http://www.plannedparenthood.org/parents/parenting-lgbt-and-questioning-kids"
+            >
+                Planned Parenthood Guide to Parenting LGBT and Questioning Kids
+            </a>
         </div>
     );
 };
