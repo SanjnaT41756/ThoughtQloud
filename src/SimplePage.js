@@ -1,7 +1,8 @@
 import React from "react";
-//import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SimplePage = ({ title, imageUrl, text }) => {
+    const navigate = useNavigate();
     const titleStyle = {
         display: "flex",
         justifyContent: "center",
@@ -43,6 +44,10 @@ const SimplePage = ({ title, imageUrl, text }) => {
         outline: "none",
     };
 
+    const navigateResources = () => {
+        navigate("/resources");
+    };
+
     return (
         <div style={centerContainerStyle}>
             <h1>{title}</h1>
@@ -50,10 +55,7 @@ const SimplePage = ({ title, imageUrl, text }) => {
             <div style={contentStyle}>
                 <p style={paragraphStyle}>{text}</p>
             </div>
-            <button
-                style={buttonStyle}
-                // onClick={navigate("/resources")}
-            >
+            <button style={buttonStyle} onClick={navigateResources}>
                 More Resources
             </button>
         </div>

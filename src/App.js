@@ -7,6 +7,7 @@ import SimplePage from "./SimplePage";
 import PageList from "./PageList";
 import CloudBackground from "./CloudBackground";
 import TitleScreen from "./TitleScreen.js";
+import Resources from "./Resources.js";
 
 const App = () => {
     return (
@@ -106,6 +107,7 @@ const App = () => {
                     }
                 />
                 <Route path="/info" element={<PageList />} />
+                <Route path="/resources" element={<Resources />} />
 
                 <Route path="/faces" element={<Faces />} />
                 <Route
