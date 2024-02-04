@@ -1,19 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./TitleScreen.css";
 
 const TitleScreen = () => {
     const [showClouds, setShowClouds] = useState(false);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        let timeoutId;
+
+        if (showClouds) {
+            // Set a timeout for the duration of the cloud animation
+            const timeoutId = setTimeout(() => {
+                // Navigate to a different page ("/main") after the animation
+                navigate("/start");
+            }, 4000); // Adjust the timeout based on the duration of your cloud animation
+
+            // Clear the timeout when the component unmounts or when animation is done
+            return () => clearTimeout(timeoutId);
+        }
+    }, [showClouds, navigate]);
 
     const handleStartButtonClick = () => {
         setShowClouds(true);
-
-        // Reset the animation state after a certain duration
-        setTimeout(() => {
-            setShowClouds(false);
-        }, 4000); // Adjust the timeout based on the desired duration of the animation
     };
 
-    const renderClouds = () => {
+    const renderCloudAnimation = () => {
         const cloudCount = 30; // Adjust the number of clouds
         const clouds = [];
 
@@ -23,7 +35,9 @@ const TitleScreen = () => {
                 animationDelay: `-${Math.random() * 3}s`, // Random animation delay
             };
 
-            clouds.push(<span key={i} className="cloud" style={style} />);
+            clouds.push(
+                <span key={i} className="cloud movingCloud" style={style} />
+            );
         }
 
         return clouds;
@@ -36,8 +50,9 @@ const TitleScreen = () => {
             <button className="start-button" onClick={handleStartButtonClick}>
                 Start
             </button>
-
-            {showClouds && <div className="clouds">{renderClouds()}</div>}
+            {showClouds && (
+                <div className="clouds">{renderCloudAnimation()}</div>
+            )}
         </div>
     );
 };

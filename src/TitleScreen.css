@@ -42,9 +42,12 @@
 }
 
 .cloud {
+    font-size: 2rem; /* Adjust the font size of the cloud emoji */
+}
+
+.movingCloud {
     position: absolute;
     bottom: 0;
-    font-size: 2rem; /* Adjust the font size of the cloud emoji */
     animation: cloudAnimation 5s linear infinite;
 }
 

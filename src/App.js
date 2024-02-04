@@ -6,13 +6,15 @@ import SimplePage from "./SimplePage";
 
 import PageList from "./PageList";
 import CloudBackground from "./CloudBackground";
+import TitleScreen from "./TitleScreen.js";
 
 const App = () => {
     return (
         <div>
             <Routes>
+                <Route path="/" element={<TitleScreen />} />
                 <Route
-                    path="/"
+                    path="/start"
                     element={
                         <CloudBackground numberOfClouds={2} type={"initial"} />
                     }
