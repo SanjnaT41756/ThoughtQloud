@@ -12,6 +12,8 @@ const CloudButton = ({ label }) => {
             "My child has expressed interest in a non-normalized relationship"
         ) {
             navigate("/queer");
+        } else if (label == "Just to learn") {
+            navigate("/resources");
         } else if (
             label == "Are you suspicious of their queer identity?" ||
             label == "Did you find out in an argument?" ||
