@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/ashamed" element={<CloudBackground numberOfClouds={3} type = {"ashamed"}/>} />
         <Route path="/religion" element={<CloudBackground numberOfClouds={3} type = {"religion"}/>} />
         <Route path="/deceit" element={<CloudBackground numberOfClouds={3} type = {"deceit"}/>} />
-        <Route path="/dissapointment" element={<CloudBackground numberOfClouds={3} type = {"dissapointment"}/>} />
+        <Route path="/dissapointment" element={<CloudBackground numberOfClouds={2} type = {"dissapointment"}/>} />
         <Route path="/queerKnowledge" element={<CloudBackground numberOfClouds={2} type = {"queerKnowledge"}/>} />
         <Route path="/yes" element={<CloudBackground numberOfClouds={1} type = {"yes"}/>} />
         <Route path="/no" element={<CloudBackground numberOfClouds={1} type = {"no"}/>} />
