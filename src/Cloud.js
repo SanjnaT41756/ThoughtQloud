@@ -34,7 +34,7 @@ const CloudButton = ({ label }) => {
             label == "ok" ||
             label == "learn more"
         ) {
-            navigate("/dummy");
+            navigate("/info");
         } else if (label == "Religion") {
             navigate("/religion");
         } else if (label == "Deceit") {

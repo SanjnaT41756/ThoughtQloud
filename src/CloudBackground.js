@@ -3,8 +3,10 @@ import React from "react";
 import CloudButton from "./Cloud";
 import { Link } from "react-router-dom";
 import "./CloudBackground.css";
+import { useNavigate } from "react-router-dom";
 
 const CloudBackground = ({ numberOfClouds, type }) => {
+    const navigate = useNavigate();
     let bubbleTitles = new Array();
     if (type == "dummy") {
         bubbleTitles.push("CHANGE ME");

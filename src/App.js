@@ -105,6 +105,7 @@ const App = () => {
                         <CloudBackground numberOfClouds={1} type={"dummy"} />
                     }
                 />
+                <Route path="/info" element={<PageList />} />
 
                 <Route path="/faces" element={<Faces />} />
                 <Route
