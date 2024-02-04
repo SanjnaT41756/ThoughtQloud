@@ -24,6 +24,7 @@ const Faces = () => {
         justifyContent: "center",
         alignItems: "center",
         topMargin: "15vh", // Make the container take the full height of the viewport
+
     };
 
     const titleStyle = {
@@ -33,6 +34,7 @@ const Faces = () => {
         marginTop: "30vh",
         fontSize: "50px", // Adjust spacing between the title and emojis
     };
+
 
     return (
         <div>
