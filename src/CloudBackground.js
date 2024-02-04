@@ -86,7 +86,7 @@ const CloudBackground = ({ numberOfClouds, type }) => {
 
     return (
         <div className="background-page">
-            <h2>{header}</h2>
+            <h2 className="head">{header}</h2>
             <div className="cloud-container">{renderClouds()}</div>
         </div>
     );
