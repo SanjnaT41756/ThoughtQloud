@@ -2,6 +2,7 @@ import React from "react";
 import Faces from "./Faces.js"; // Adjust the import path based on your file structure
 import SimplePage from "./SimplePage";
 
+import PageList from "./PageList";
 import MotherHuggingImage from "./images/mother_hugging.jpg";
 
 import CloudBackground from "./CloudBackground";
@@ -19,11 +20,12 @@ const App = () => {
             <Faces />
             */}
 
-            <SimplePage
+            {/* <SimplePage
                 title={pageTitle}
                 imageUrl={pageImageUrl}
                 text={pageText}
-            />
+            /> */}
+            <PageList />
         </div>
     );
 };

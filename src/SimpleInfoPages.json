@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Page 1",
+        "imageUrl": "./images/mother_hugging.jpg",
+        "text": "This is some text for Page 1."
+    },
+    {
+        "title": "Page 2",
+        "text": "This is some text for Page 2."
+    }
+]
