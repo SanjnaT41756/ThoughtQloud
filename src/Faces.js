@@ -1,10 +1,21 @@
 import React from "react";
 import ImageButton from "./ImageButton";
 import EmojiButton from "./EmojiButton";
+import { useNavigate } from 'react-router-dom';
 
 const Faces = () => {
+    const navigate = useNavigate();
     const handleEmojiClick = (emotion) => {
-        alert(`You clicked for ${emotion}!`);
+        if (emotion == "Angry" || emotion == "Sad"){
+            navigate('../why')
+        }
+        else if (emotion == "Content" || emotion == "Proud"){
+            navigate('../queerKnowledge')
+        }
+        else{
+            navigate('../middleFace')
+        }
+        //alert(`You clicked for ${emotion}!`);
         // You can add logic based on the emotion clicked
     };
 
