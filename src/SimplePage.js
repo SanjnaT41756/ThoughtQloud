@@ -1,7 +1,6 @@
 import React from "react";
-import MotherHuggingImage from "./images/mother_hugging.jpg";
 
-const SimplePage = () => {
+const SimplePage = ({ title, imageUrl, text }) => {
     const titleStyle = {
         display: "flex",
         justifyContent: "center",
@@ -34,18 +33,10 @@ const SimplePage = () => {
 
     return (
         <div style={centerContainerStyle}>
-            <h1>Welcome to the Simple Page</h1>
-            <img
-                src={MotherHuggingImage}
-                alt="Clipart Image"
-                style={imageStyle}
-            />
+            <h1>{title}</h1>
+            <img src={imageUrl} alt="Clipart Image" style={imageStyle} />
             <div style={contentStyle}>
-                <p style={paragraphStyle}>
-                    This is some text on the simple page. It will adjust its
-                    size based on the size of the page. You can adjust the
-                    maximum width and font size as needed.
-                </p>
+                <p style={paragraphStyle}>{text}</p>
             </div>
         </div>
     );
