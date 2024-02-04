@@ -1,0 +1,61 @@
+.title-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #87ceeb; /* Sky blue background color */
+}
+
+.app-name {
+    font-size: 10vh;
+    margin-bottom: 3vh;
+    color: #ffffff; /* White text color */
+}
+
+.app-description-text {
+    font-size: 2vh;
+    margin-bottom: 3vh;
+    color: #ffffff; /* White text color */
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #3498db; /* Light blue button color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.clouds {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.cloud {
+    font-size: 2rem; /* Adjust the font size of the cloud emoji */
+}
+
+.movingCloud {
+    position: absolute;
+    bottom: 0;
+    animation: cloudAnimation 5s linear infinite;
+}
+
+@keyframes cloudAnimation {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const SimplePage = ({ title, imageUrl, text }) => {
+const Resources = () => {
     const navigate = useNavigate();
     const titleStyle = {
         display: "flex",
@@ -50,16 +50,9 @@ const SimplePage = ({ title, imageUrl, text }) => {
 
     return (
         <div style={centerContainerStyle}>
-            <h1>{title}</h1>
-            <img src={imageUrl} alt="Clipart Image" style={imageStyle} />
-            <div style={contentStyle}>
-                <p style={paragraphStyle}>{text}</p>
-            </div>
-            <button style={buttonStyle} onClick={navigateResources}>
-                More Resources
-            </button>
+            <h1>Resources Page</h1>
         </div>
     );
 };
 
-export default SimplePage;
+export default Resources;
