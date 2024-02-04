@@ -1,6 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Faces from "./Faces.js"; // Adjust the import path based on your file structure
+
+import SimplePage from "./SimplePage";
+
+import PageList from "./PageList";
 import CloudBackground from "./CloudBackground";
 
 const App = () => {
