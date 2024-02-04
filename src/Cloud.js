@@ -9,6 +9,8 @@ const CloudButton = ({ label }) => {
         // Navigate to the '/faces' route when a cloud is clicked
         if (label == "My kid is queer") {
             navigate("/queer");
+        } else if (label == "I want to learn more") {
+            navigate("/resources");
         } else if (
             label == "Are you suspicious of their queer identity?" ||
             label == "Did you find out in an argument?" ||
@@ -34,7 +36,7 @@ const CloudButton = ({ label }) => {
             label == "ok" ||
             label == "learn more"
         ) {
-            navigate("/info");
+            navigate("/info", { state: { infoPageIndex: 0 } });
         } else if (label == "Religion") {
             navigate("/religion");
         } else if (label == "Deceit") {
