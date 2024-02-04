@@ -5,6 +5,7 @@ import SimplePage from "./SimplePage";
 import PageList from "./PageList";
 
 import CloudBackground from "./CloudBackground";
+import TitleScreen from "./TitleScreen.js";
 const App = () => {
     const numberOfClouds = 3; // Specify the number of clouds you want
     return (
@@ -13,7 +14,8 @@ const App = () => {
             <CloudBackground numberOfClouds={numberOfClouds} />
             <Faces />
             */}
-            <PageList />
+            {/* <PageList /> */}
+            <TitleScreen />
         </div>
     );
 };

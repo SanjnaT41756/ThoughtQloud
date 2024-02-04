@@ -1,4 +1,5 @@
 import React from "react";
+//import { useNavigate } from "react-router-dom";
 
 const SimplePage = ({ title, imageUrl, text }) => {
     const titleStyle = {
@@ -31,6 +32,17 @@ const SimplePage = ({ title, imageUrl, text }) => {
         fontSize: "2vw", // Font size relative to the viewport width
     };
 
+    const buttonStyle = {
+        padding: "10px",
+        fontSize: "16px",
+        backgroundColor: "#3498db", // Change the background color as needed
+        color: "#ffffff", // Change the text color as needed
+        borderRadius: "5px",
+        cursor: "pointer",
+        border: "none",
+        outline: "none",
+    };
+
     return (
         <div style={centerContainerStyle}>
             <h1>{title}</h1>
@@ -38,6 +50,12 @@ const SimplePage = ({ title, imageUrl, text }) => {
             <div style={contentStyle}>
                 <p style={paragraphStyle}>{text}</p>
             </div>
+            <button
+                style={buttonStyle}
+                // onClick={navigate("/resources")}
+            >
+                More Resources
+            </button>
         </div>
     );
 };
