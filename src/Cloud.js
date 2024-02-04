@@ -7,10 +7,11 @@ const CloudButton = ({ label }) => {
 
     const handleCloudClick = () => {
         // Navigate to the '/faces' route when a cloud is clicked
-        if (label == "My kid is queer") {
+        if (
+            label ==
+            "My child has expressed interest in a non-normalized relationship"
+        ) {
             navigate("/queer");
-        } else if (label == "I want to learn more") {
-            navigate("/resources");
         } else if (
             label == "Are you suspicious of their queer identity?" ||
             label == "Did you find out in an argument?" ||
@@ -20,23 +21,26 @@ const CloudButton = ({ label }) => {
         } else if (label == "Ashamed") {
             navigate("/ashamed");
         } else if (
-            label == "You failed as a parent" ||
-            label == "You didnt want to be different" ||
-            label == "they gross you out" ||
-            label == "against beliefs" ||
-            label == "uuuu" ||
-            label == "challenge" ||
-            label == "how not have known" ||
-            label == "changes everyrhing" ||
-            label == "they liars" ||
-            label == "everything thought change" ||
+            label == "I failed as a parent" ||
+            label == "What will other people think?" ||
+            label == "I don't want to be different" ||
+            label == "It is against all my beliefs" ||
+            label == "This is unnatural" ||
+            label == "This challenges everything I once thought I knew" ||
+            label == "How could I not have known" ||
+            label == "I feel as if I don't know them anymore" ||
+            label == "I feel like they lied to me" ||
+            label ==
+                "Everything that I thought for my child will no longer happen." ||
             label == "Do you know what being queer is?" ||
             label == "How did i not see the signs" ||
             label == "They dont seem gay to me" ||
             label == "ok" ||
-            label == "learn more"
+            label == "learn more" ||
+            label ==
+                "I don't want them to go through the hardships of being queer."
         ) {
-            navigate("/info", { state: { infoPageIndex: 0 } });
+            navigate("/dummy");
         } else if (label == "Religion") {
             navigate("/religion");
         } else if (label == "Deceit") {
