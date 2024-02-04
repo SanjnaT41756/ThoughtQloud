@@ -1,11 +1,16 @@
 /* BackgroundPage.css */
 
+.head{
+    margin-left: 50px;
+    color: white;
+}
 .background-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh; /* Adjust the height as needed */
+    background-color: #87ceeb;
 }
 
 .cloud-container {
